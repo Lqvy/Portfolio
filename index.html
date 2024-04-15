@@ -1,0 +1,413 @@
+<!DOCTYPE HTML>
+	<head>
+		<title> Chase's Portfolio </title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="icon" type="image/x-icon" href="images/portfoliofavicon3.png">
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<script src="https://kit.fontawesome.com/e8041c2ebb.js" crossorigin="anonymous"></script>
+		<script type="module" src="https://public.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js"></script>
+
+		<!-- Columns For Personal Projects Tab -->
+		<style>
+			.row {
+				  display: flex;
+			}
+			/* Create two equal columns that sits next to each other */
+			.column {
+				text-align: center;
+				flex: 50%;
+				  padding: 10px;
+			}
+			.traveling {text-align: center;}
+		</style>
+	<style>
+        .ClickIt {
+            text-align: center;
+        }
+	</style>		
+	</head>
+	<body class="is-preload" , onload="initViz();">
+
+		<!-- Wrapper -->
+		<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="logo">
+							<span class="fa-solid fa-user-tie fa-bounce fa-2xl"></span>
+						</div>
+						<div class="content">
+							<div class="inner">
+								<h1>Chase Di Maria Breisinger</h1>
+								<p>Portfolio: Showcasing data analysis projects and personal works</p>
+							</div>
+						</div>
+					<!-- Navigation links -->
+						<nav>
+							<ul>
+								<li><a href="#intro">Intro</a></li>
+								<li><a href="#about">About</a></li>
+								<li><a href="#projects">Projects</a></li>
+								<li><a href="#personal">Personal </a></li>
+								<li><a href="#contact">Contact</a></li>
+							</ul>
+						</nav>
+					<!-- Hidden Navigation links (Extra Page's)-->
+						
+					<div hidden>
+						<nav>
+							<ol>
+								<li><a href="#thankyou">Thank You </a></li>
+								<li><a href="#project1">Project1 </a></li>
+								<li><a href="#project2">Project2 </a></li>
+								<li><a href="#project3">Project3 </a></li> 
+								<br> </br>
+								<li><a href="#personalproject1">PersonalProject1 </a> </li>
+								<li><a href="#personalproject2">PersonalProject2 </a></li>
+								<li><a href="#personalproject3">PersonalProject3 </a></li> 
+							</ol>
+						</nav>
+					</div>
+
+					</header>
+
+				<!-- Main -->
+				<div id="main">
+					<!-- Intro -->
+						<article id="intro">
+
+							<h2 class="major">Introduction</h2>
+							<div class="image selfie">  <img src="images/Selfie.jpg" alt="" /> </div>
+							<p> Navigation Directions:
+								<b>|</b> Click Outside Of Bubble = Main Screen
+								<b>|</b> Clicking X = Back
+							</p>
+							<p> To put a face to the name, here I am. As far as introductions go; Hi! My name is Chase, I was on born January 9th, 2003, and the work shown within this portfolio is primarily code and visualization (mostly catered to Data Analysis). Here are my <a href="#projects"> data analysis projects.</a> To learn more about me I have an entire <a href="#about"> about me </a> page.</p>
+							<blockquote> On the side I enjoy Philosophy, Psychology, indie deving, and 3D art. There is a <a href="#personal"> personal projects </a> page that contains a few of these.</blockquote>
+						
+						</article>
+					
+					<!-- About -->
+						<article id="about">
+							<h2 class="major">About</h2>
+							<span class="image selfie"><img src="images/Selfietwo.jpeg" alt="" /></span>
+							<p> <h3>How my interest started.</h3>
+								About me... I've had an interest in technology since I was young, I played lots of video games but never truly got into physical technology until my later years. Upon my first part-time job, I built my own computer, this kickstarted my true interest in the topic. 
+								From here, I later got interested in game indie dev'ing and 3D art. 
+								<br> </br>
+								<h3>Continued..</h3>
+								From my interest in indie dev came my interest in code. As I got older I wanted something I could do more 'professionally' but still retain a sense of constant learning and some creativity. So, out of the sea of things to choose from, Data Analytics arose. Data Analytics 
+								allows me to do deep dives into the understanding of processes and services within these companies, but still show some creativity through visualizations. 
+								<br> </br>
+								<h3>Education.</h3>
+								I was in traditional high school for about 2 years, then I was introduced to Polk State Lakeland Gateway to College Collegiate High School, in which I started college full-time at 16. I had my AA degree at 19 due to this and will have my Bachelors as of the middle of 2024 (21 y/o).
+								I am to continue schooling into <b>UCF for the Data Analytics program </b>they provide to continue my education.
+								<br> </br>
+								<h3>New Yet Defining Interests.</h3>
+								Through my time pursuing these ventures I've worked a lot on my mental health and more recently done lots of new things mixed with much more socializing. This led to my interest in backpacking, traveling, philosophy, and psychology. <b>Philosophy</b> has massively changed the way I approach
+								coding, as philosophy <b>is</b> great for learning in depth critical thinking, <b>similar to code</b>. Psychology is of course great for personal growth, understanding the brain can change how you approach most situations.
+							</p>
+						</article>
+
+					<!-- Projects -->
+						<article id="projects">
+							<h2 class="major">Projects</h2>
+							
+							<div class="row">
+								<div class="column"> 
+									<h3> Project1 </h3>
+									<p>Project#1</p> 	
+									<span class="image main"> <a href="#project1"> <img src="images/pic01.jpg" alt="" /> </a> </span>
+								</div>
+								
+								<div class="column"> 
+									<h3> Project2 </h3>
+									<p> Project#2</p>
+									<span class="image main"> <a href="#project2"> <img src="images/pic02.jpg" alt="" /> </a> </span>
+								</div>
+							</div>
+						</article>
+							
+						<!-- Project1 -->
+							<article id="project1">
+								<h2 class="major">Project #1!</h2>
+								<p> First Project Goes Here!</p>
+								
+							<div>
+								<tableau-viz 
+								id="tableauViz" 
+								src='https://public.tableau.com/views/Superstore_embedded_800x800/Overview' 
+								toolbar="bottom" hide-tabs
+								style="width:800px; height:800px;"
+								>
+								</tableau-viz>
+							</div>
+
+							</article>
+
+							<!-- Project2 -->
+							<article id="project2">
+								<h2 class="major">Project #2!</h2>
+								<p> Second Project Goes Here!</p>
+							</article>
+							
+							<!-- Project3 -->
+							<article id="project3">
+								<h2 class="major">Project #3!</h2>
+								<p> Third Project Goes Here!</p>
+							</article>
+
+					<!-- Personal Projects -->
+					<article id="personal">
+						<h2 class="major">Personal Projects</h2>
+						
+						<blockquote> This is a culmination of my personal projects, whether that be my 3D modeling hobby or indie game dev.</blockquote>
+					<div class="ClickIt">
+						<p><b>< Click Image ></b></p>
+					</div>
+						<div class="row">
+							
+							<div class="column"> 
+								<h3> Indie Dev'ing </h3>
+								<p>WIP 2D Platformer [barebones]</p> 
+								<span class="image main"> <a href="#personalproject1"> <img src="images/IndieGameSS.PNG" alt="rotate-image" class="rotate-image"/> </a> </span>
+							</div>
+					
+							<div class="column"> 
+								<h3> 3D Art </h3>
+								<p><i>Subdivision workflow practice</i></p>
+								<span class="image main"> <a href="#personalproject2"> <img src="images/3Dhelm.png" alt="" /> </a> </span>
+							</div>
+						</div>
+							<div>
+								<h3 class="traveling"> Traveling </h3>
+								<p class="traveling"><i>2024 Solar Eclipse Personal Photo </i></p> 
+								<span class="image main"> <a href="#personalproject3"> <img src="images/IMG_1331.jpg" alt="" /> </a> </span>
+							</div>
+					</article>
+
+						<!-- PersonalProjectPage1 -->
+						<article id="personalproject1">
+							<h2 class="major">Indie Dev Learnings</h2>
+							<p> 								
+								<div class="column">
+									<h3> BalloonPopper </h3>
+									<video width="500" height="240" controls>
+										<source src="/images/BalloonVid.mp4" type="video/mp4">
+										Your browser does not support the video tag.
+									</video>
+								</div>
+							</p>
+							<p> 								
+								<div class="column">
+									<h3> Collision </h3>
+									<video width="500" height="240" controls>
+										<source src="/images/CollisionVid.mp4" type="video/mp4">
+										Your browser does not support the video tag.
+									</video>
+								</div>
+							</p> 
+							<p> 								
+								<div class="column">
+									<h3> Loops </h3>
+									<video width="500" height="240" controls>
+										<source src="/images/LoopsVid.mp4" type="video/mp4">
+										Your browser does not support the video tag.
+									</video>
+								</div>
+							</p>
+							<p> 								
+								<div class="column">
+									<h3> Physics </h3>
+									<video width="500" height="240" controls>
+										<source src="/images/PhysicsG.mp4" type="video/mp4">
+										Your browser does not support the video tag.
+									</video>
+								</div>
+							</p>
+						</article>
+						
+						<!-- PersonalProjectPage2 -->
+						<article id="personalproject2">
+							<h2 class="major"> 3D arts</h2>
+							<p><a href="https://www.artstation.com/lqvy" target="_blank" rel="noreferrer noopener"><b><u>| Artstation | </u></b></a>
+							</p>
+
+							<div class="column">
+								<h3> Space Bus Station </h3>
+								<span class="image main"> <img src="images/SpaceBusStop.png"> </span>
+								<span class="image main"> <img src="images/SpaceBusStop1.5.png"> </span>
+							</div>
+						<p>
+							<div class="column">
+								<h3> Hidden Library </h3>
+								<span class="image main"> <img src="images/HiddenLibrary.jpg"> </span>
+							</div>
+						</p>
+						<p>
+							<div class="column">
+								<h3> Lqvy Bot </h3>
+								<span class="image main"> <img src="images/Robot.png"> </span>
+							</div>
+						</p>
+						<p>
+							<div class="column">
+								<h3> Flowers </h3>
+								<span class="image main"> <img src="images/FlowersRender.png"> </span>
+							</div>
+						</p>
+						<p>
+							<div class="column">
+								<h3> Motorcycle Concept ReCreation </h3>
+								<span class="image main"> <img src="images/MotorBike.png"> </span>
+							</div>
+						</p>
+						<p>
+							<div class="column">
+								<h3> Ghost Guy </h3>
+								<span class="image main"> <img src="images/GhostDudeStylized.jpg"> </span>
+							</div>
+						</p>
+						<p>
+							<div class="column">
+								<h3> Object (Hard surface Practice) </h3>
+								<span class="image main"> <img src="images/ObjectRender.jpg"> </span>
+							</div>
+						</p>
+						<p>
+							<div class="column">
+								<h3> 3D Print Commission </h3>
+								<span class="image main"> <img src="images/3Dprint.jpg"> </span>
+							</div>
+						</p>
+						<p>
+							<div class="column">
+								<h3> Freestyle Sub-Div (Alien Pistol) </h3>
+								<span class="image main"> <img src="images/APRender.jpg"> </span>
+							</div>
+						</p>
+						<p>
+							<div class="column">
+								<h3> 15 Minute Challenge </h3>
+								<span class="image main"> <img src="images/CrystalR.png"> </span>
+							</div>
+						</p>
+						</article>
+
+						<!-- PersonalProjectPage3 -->
+						<article id="personalproject3">
+							<h2 class="major">Traveling/Backpacking</h2>
+							<p> 
+								<div class="column">
+									<h3> 5 Day Eclipse Backpack - </h3>
+									<h3> Ozarks,MO ; Crane Lake Trail </h3>
+									<span class="image main"> 
+										<video width="500" height="300" controls muted>
+											<source src="images/IMG_1332.mov" type="video/mp4" >
+											Your browser does not support the video tag.
+										  </video>
+										  <img src="images/IMG_1331.jpg">
+										  <img src="images/IMG_1307.jpg"> 
+										  <img src="images/IMG_1308.jpg">
+										  <img src="images/IMG_1314.jpg">
+										  <img src="images/IMG_1315.jpg">
+										  <img src="images/IMG_1336.jpg">
+										  <img src="images/IMG_1334.jpg">
+										  <img src="images/IMG_1325.jpg">
+										  <img src="images/IMG_1328.jpg">
+									</span>
+								</div>
+
+								<div class="column">
+									<h3> Randolph NY - </h3>
+									<span class="image main"> 
+										  <img src="images/NY1.jpg">
+										  <img src="images/NY2.jpg"> 
+										  <img src="images/NY3.jpg">
+										  <img src="images/NY4.jpg">
+										  <img src="images/NY5.jpg">
+										  <img src="images/NY6.jpg">
+									</span>
+								</div>
+								
+								<div class="column">
+									<h3> Colorado - </h3>
+									<span class="image main"> 
+										  <img src="images/Colorado.jpg">
+										  <img src="images/Colorado2.jpg">
+									</span>
+									<footnote> Regretfully, I didn't take more photos in Colorado.</footnote>
+								</div>
+
+								</p>
+						</article>
+
+					<!-- Contact -->
+						<article id="contact">
+							<h2 class="major">Contact</h2>
+							<form action="https://api.web3forms.com/submit" method="post">
+								<div class="fields">
+									<div class="email functions">	
+										<input type="hidden" name="access_key" value="9b25136e-97fa-41eb-9a3e-f47b571cc849">
+										<input type="hidden" name="redirect" value="http://127.0.0.1:5501/index.html#thankyou"> <!--Replace with Thank You page URL-->
+										<input type="hidden" name="subject" value="New email from your portfolio!">
+										<input type="hidden" name="from_name" value="Portfolio Website">
+									</div>
+									<div class="field half"> 
+										<label for="name">Name</label>
+										<input type="text" name="name" id="name" placeholder="Your Name" required/>
+									</div>
+									<div class="field half">
+										<label for="email">Email</label>
+										<input type="email" name="email" id="email" placeholder="Email Address" maxlength="254"required/>
+									</div>
+									<div class="field">
+										<label for="message">Message</label>
+										<textarea name="message" id="message" rows="4" placeholder="Character Limit: 320" maxlength="320"  required></textarea>
+									</div>
+									<div class="field half">
+										<input type="checkbox" id="robot-check" required/>
+										<label for="robot-check">Not a robot </label>
+									</div>
+								</div>
+								<ul class="actions">
+									<li><input type="submit" value="Send Message" class="primary" /></li>
+									<li><input type="reset" value="Reset" /></li>
+								</ul>
+							</form>
+							<ul class="icons">
+								<li><a href="https://www.linkedin.com/in/chase-di-maria-breisinger/"  target="_blank" class="icon brands fa-linkedin"><span class="label">linkedin</span></a></li>
+								<li><a href="https://github.com/Lqvy"  target="_blank" class="icon brands fa-github"> <span class="label">github</span></a></li>
+								<li><a href="https://discordapp.com/users/313125133923647489"  target="_blank" class="icon brands fa-discord"><span class="label">discordapp</span></a></li>
+								<br></br>
+								<footer> <blockquote> Directly emails my personal </blockquote></footer>
+							</ul>
+						</article>
+					
+					<!-- Email Recieved Page -->
+						<article id="thankyou">
+							<h2 class="major">Email Recieved!</h2>
+							<p> I will get back to you shortly! Thank you for contacting me!</p>
+						</article>
+
+				</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<p> To get in touch <a href="#contact"> go to contact </a></p>
+				</footer>
+
+		</div>
+
+		<!-- BG -->
+			<div id="bg"></div>
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+	</body>
+</html>
